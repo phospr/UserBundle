@@ -20,6 +20,49 @@ use Opfura\UserBundle\Model\User;
 class UserTest extends \PHPUnit_Framework_TestCase
 {
     /**
+     * Test firstname
+     *
+     * @author Tom Haskins-Vaughan <tom@tomhv.uk>
+     * @since  0.4.0
+     */
+    public function testFirstname()
+    {
+        $user = new User;
+        $user->setFirstname('Apple');
+
+        $this->assertSame('Apple', $user->getFirstname());
+    }
+
+    /**
+     * Test lastname
+     *
+     * @author Tom Haskins-Vaughan <tom@tomhv.uk>
+     * @since  0.4.0
+     */
+    public function testLastname()
+    {
+        $user = new User;
+        $user->setLastname('McFritter');
+
+        $this->assertSame('McFritter', $user->getLastname());
+    }
+
+    /**
+     * Test name
+     *
+     * @author Tom Haskins-Vaughan <tom@tomhv.uk>
+     * @since  0.4.0
+     */
+    public function testName()
+    {
+        $user = new User;
+        $user->setFirstname('Apple');
+        $user->setLastname('McFritter');
+
+        $this->assertSame('Apple McFritter', $user->getName());
+    }
+
+    /**
      * Test createdAt
      *
      * @author Tom Haskins-Vaughan <tom@tomhv.uk>

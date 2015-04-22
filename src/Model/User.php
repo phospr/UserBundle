@@ -19,8 +19,18 @@ use Gedmo\Mapping\Annotation as Gedmo;
  * @author Tom Haskins-Vaughan <tom@tomhv.uk>
  * @since  0.0.1
  */
-class User extends BaseUser
+class User extends BaseUser implements UserInterface
 {
+    /**
+     * @ORM\Column(type="string")
+     */
+    protected $firstname;
+
+    /**
+     * @ORM\Column(type="string")
+     */
+    protected $lastname;
+
     /**
      * @Gedmo\Timestampable(on="create")
      * @ORM\Column(type="datetime")
@@ -32,6 +42,79 @@ class User extends BaseUser
      * @ORM\Column(type="datetime")
      */
     protected $updatedAt;
+
+    /**
+     * Set firstname
+     *
+     * @author Tom Haskins-Vaughan <tom@tomhv.uk>
+     * @since  0.4.0
+     *
+     * @param  string $firstname
+     *
+     * @return User
+     */
+    public function setFirstname($firstname)
+    {
+        $this->firstname = $firstname;
+
+        return $this;
+    }
+
+    /**
+     * Get firstname
+     *
+     * @author Tom Haskins-Vaughan <tom@tomhv.uk>
+     * @since  0.4.0
+     *
+     * @return string
+     */
+    public function getFirstname()
+    {
+        return $this->firstname;
+    }
+
+    /**
+     * Set lastname
+     *
+     * @author Tom Haskins-Vaughan <tom@tomhv.uk>
+     * @since  0.4.0
+     *
+     * @param  string $lastname
+     *
+     * @return User
+     */
+    public function setLastname($lastname)
+    {
+        $this->lastname = $lastname;
+
+        return $this;
+    }
+
+    /**
+     * Get lastname
+     *
+     * @author Tom Haskins-Vaughan <tom@tomhv.uk>
+     * @since  0.4.0
+     *
+     * @return string
+     */
+    public function getLastname()
+    {
+        return $this->lastname;
+    }
+
+    /**
+     * Get name
+     *
+     * @author Tom Haskins-Vaughan <tom@tomhv.uk>
+     * @since  0.4.0
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return trim($this->getFirstname().' '.$this->getLastname());
+    }
 
     /**
      * Set createdAt

@@ -9,6 +9,7 @@
 
 namespace Opfura\UserBundle\Model;
 
+use Doctrine\ORM\Mapping as ORM;
 use FOS\UserBundle\Model\User as BaseUser;
 use Gedmo\Mapping\Annotation as Gedmo;
 
@@ -22,11 +23,13 @@ class User extends BaseUser
 {
     /**
      * @Gedmo\Timestampable(on="create")
+     * @ORM\Column(type="datetime")
      */
     protected $createdAt;
 
     /**
      * @Gedmo\Timestampable(on="update")
+     * @ORM\Column(type="datetime")
      */
     protected $updatedAt;
 

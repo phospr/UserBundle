@@ -27,14 +27,14 @@ class UserTest extends \PHPUnit_Framework_TestCase
      */
     public function testCreatedAt()
     {
-        $membership = new User;
-        $membership->setCreatedAt(new \DateTime(
+        $user = new User;
+        $user->setCreatedAt(new \DateTime(
             '2015-04-04 12:00:00'
         ));
 
         $this->assertSame(
             '2015-04-04 12:00:00',
-            $membership->getCreatedAt()->format('Y-m-d H:i:s')
+            $user->getCreatedAt()->format('Y-m-d H:i:s')
         );
     }
 
@@ -46,14 +46,14 @@ class UserTest extends \PHPUnit_Framework_TestCase
      */
     public function testUpdatedAt()
     {
-        $membership = new User;
-        $membership->setUpdatedAt(new \DateTime(
+        $user = new User;
+        $user->setUpdatedAt(new \DateTime(
             '2015-04-04 12:00:00'
         ));
 
         $this->assertSame(
             '2015-04-04 12:00:00',
-            $membership->getUpdatedAt()->format('Y-m-d H:i:s')
+            $user->getUpdatedAt()->format('Y-m-d H:i:s')
         );
     }
 }

@@ -9,6 +9,7 @@
 
 namespace Opfura\UserBundle\Model;
 
+use FOS\UserBundle\Model\User as BaseUser;
 use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
@@ -17,7 +18,7 @@ use Gedmo\Mapping\Annotation as Gedmo;
  * @author Tom Haskins-Vaughan <tom@tomhv.uk>
  * @since  0.0.1
  */
-class User
+class User extends BaseUser
 {
     /**
      * @Gedmo\Timestampable(on="create")

@@ -1,6 +1,6 @@
 {
-    "name": "opfura/user-bundle",
-    "description": "User Bundle for Opfura project",
+    "name": "yeriki/user-bundle",
+    "description": "Yeriki implementation of FOS\\UserBundle",
     "license": "MIT",
     "authors": [
         {
@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Opfura\\UserBundle\\": "src"
+            "Yeriki\\UserBundle\\": "src"
         }
     }
 }

@@ -1,13 +1,13 @@
 <?php
 
 /*
- * This file is part of the Opfura package.
+ * This file is part of the Yeriki UserBundle package.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Opfura\UserBundle\Model;
+namespace Yeriki\UserBundle\Model;
 
 use Doctrine\ORM\Mapping as ORM;
 use FOS\UserBundle\Model\User as BaseUser;

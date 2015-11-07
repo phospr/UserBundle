@@ -1,6 +1,6 @@
 {
-    "name": "yeriki/user-bundle",
-    "description": "Yeriki implementation of FOS\\UserBundle",
+    "name": "phospr/user-bundle",
+    "description": "Phospr implementation of FOS\\UserBundle",
     "license": "MIT",
     "authors": [
         {
@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Yeriki\\UserBundle\\": "src"
+            "Phospr\\UserBundle\\": "src"
         }
     }
 }

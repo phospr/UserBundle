@@ -1,13 +1,13 @@
 <?php
 
 /*
- * This file is part of the Yeriki UserBundle package.
+ * This file is part of the Phospr UserBundle package.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Yeriki\UserBundle\Model;
+namespace Phospr\UserBundle\Model;
 
 use Symfony\Component\Security\Core\User\AdvancedUserInterface;
 

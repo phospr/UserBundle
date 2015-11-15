@@ -8,9 +8,13 @@
             "email": "tom@tomhv.uk"
         }
     ],
+    "repositories": [{
+        "type": "vcs",
+        "url": "http://github.com/tomhv/StofDoctrineExtensionsBundle"
+    }]
     "require": {
         "php": ">=5.3.0",
-        "stof/doctrine-extensions-bundle": "^1.2.1",
+        "stof/doctrine-extensions-bundle": "dev-master",
         "friendsofsymfony/user-bundle": "dev-master"
     },
     "require-dev": {

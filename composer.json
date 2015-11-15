@@ -11,7 +11,7 @@
     "repositories": [{
         "type": "vcs",
         "url": "http://github.com/tomhv/StofDoctrineExtensionsBundle"
-    }]
+    }],
     "require": {
         "php": ">=5.3.0",
         "stof/doctrine-extensions-bundle": "dev-master",
